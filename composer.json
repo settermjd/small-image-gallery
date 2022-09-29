@@ -1,0 +1,22 @@
+{
+  "name": "settermjd/small-image-gallery",
+  "type": "project",
+  "authors": [
+    {
+      "name": "Matthew Setter",
+      "email": "matthew@matthewsetter.com",
+      "homepage": "https://matthewsetter.com",
+      "role": "developer"
+    }
+  ],
+  "require": {
+    "php": "^7.4 || 8.*",
+    "php-di/slim-bridge": "^3.2",
+    "slim/psr7": "^1.5",
+    "slim/slim": "4.*",
+    "slim/twig-view": "^3.3"
+  },
+  "config": {
+    "sort-packages": true
+  }
+}

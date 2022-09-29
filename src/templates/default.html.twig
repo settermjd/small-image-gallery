@@ -1,0 +1,17 @@
+{% extends "base.html.twig" %}
+
+{% block content %}
+    <div id="image-list">
+        {% if errors.image is defined %}
+            <div class="error">Please pick an image</div>
+        {% endif %}
+        <div class="images-wrapper">
+            {% for num in 1..12 %}
+                <div class="image-container">
+                    <img src="/images/{{ "%02d"| format(num) }}.jpg"
+                         alt="Australian photo {{ num }}">
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}
